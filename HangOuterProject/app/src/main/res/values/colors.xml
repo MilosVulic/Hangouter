@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dark Theme Colors -->
+    <color name="backgroundColorDarkTheme">#202020</color>
+    <color name="statusBarDarkTheme">#000000</color>
+    <color name="toolbarDarkTheme">#171717</color>
+    <color name="colorAccentDarkTheme">#008577</color>
+
+    <!-- Orange Theme Colors -->
+    <color name="backgroundOrangeTheme">#FFFFFF</color>
+    <color name="statusBarOrangeTheme">#e95304</color>
+    <color name="toolbarItemBackgroundLight">#f47c00</color>
+    <color name="colorAccentOrangeTheme">#f47100</color>
+
+    <!-- ScrollView Bar Colors -->
+    <color name="scrollViewDarkThemeColor">#3c3f41</color>
+    <color name="scrollViewLightThemeColor">#595b5d</color>
+
+    <!-- ScrollBar which is invisible with this color settings (I don't need it to be visible) -->
+    <color name="invisibleScrollBarLightTheme">#fafafa</color>
+
+    <!-- Navigation view selected item background color -->
+    <color name="selectedItemNavigationViewOrange">#E4E6E6</color>
+    <color name="selectedItemNavigationViewDark">#303234</color>
+
+    <color name="cardViewBackgroundDarkColor">#2b2b2b</color>
+
+    <color name="cardViewBack">#292929</color>
+</resources>
+

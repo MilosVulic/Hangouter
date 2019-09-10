@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HangOuterProject</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <!-- TODO: String resources for theme changing -->
+    <string name="settings_category_theme">Thema</string>
+    <string name="settings_title_theme">Veränderung Thema</string>
+    <string name="settings_title_theme_off">Wechseln Sie zum dunklen Thema</string>
+    <string name="settings_title_theme_on">Wechseln Sie zum Lichtthema</string>
+
+    <!-- TODO: String resources for language settings -->
+    <string name="settings_category_language">Sprache</string>
+    <string name="settings_title_language">Standardsprache</string>
+    <string name="settings_summary_language">Anwendungssprache auswählen</string>
+    <string name="enLanguage">Englischsprachig</string>
+    <string name="srLanguage">Serbisch</string>
+    <string name="geLanguage">Deutsch</string>
+    <string name="ruLanguage">Russisch</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="creditcard">CreditCard</string>
+    <string name="email">Email</string>
+</resources>

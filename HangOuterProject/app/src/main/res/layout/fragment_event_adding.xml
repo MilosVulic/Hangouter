@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-8dp">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="115dp"
+                android:src="@drawable/add_event"
+                android:id="@+id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="TODO"
+                android:cropToPadding="true"/>
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="0dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent" android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_event_title"
+                        android:id="@+id/imageViewEventTitle"
+                        app:layout_constraintTop_toTopOf="@+id/editTextEventNameDetails"
+                        app:layout_constraintBottom_toBottomOf="@+id/editTextEventNameDetails"
+                        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="40dp"
+                        android:contentDescription="TODO"
+                        tools:ignore="ContentDescription"/>
+
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/editTextEventNameDetails" android:layout_marginTop="24dp"
+                        android:layout_marginBottom="24dp"
+                        android:hint="Event name"
+                        android:layout_marginEnd="40dp" app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageViewEventTitle" android:layout_marginStart="24dp"
+                        app:layout_constraintHorizontal_bias="0.35" android:importantForAutofill="no"
+                        tools:ignore="UnusedAttribute" app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_width="0dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent" android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/card_view">
+
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_phone"
+                        android:id="@+id/imageViewPhoneNumber"
+                        android:contentDescription="TODO"
+                        tools:ignore="ContentDescription"
+                        android:layout_marginStart="40dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/editTextPhoneNumber"
+                        app:layout_constraintBottom_toBottomOf="@+id/editTextPhoneNumber"/>
+
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:ems="10"
+                        android:id="@+id/editTextPhoneNumber" android:layout_marginTop="24dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="40dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageViewPhoneNumber"
+                        android:layout_marginStart="24dp" app:layout_constraintHorizontal_bias="0.35"
+                        android:hint="Phone number" android:layout_marginBottom="24dp"/>
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="0dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent" android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/card_view1">
+
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_capacity"
+                        android:id="@+id/imageViewCapacity"
+                        android:contentDescription="TODO"
+                        tools:ignore="ContentDescription"
+                        android:layout_marginStart="40dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/editTextCapacity"
+                        app:layout_constraintBottom_toBottomOf="@+id/editTextCapacity"/>
+
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:id="@+id/editTextCapacity" android:layout_marginTop="24dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginEnd="40dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:hint="Capacity (300 places)"
+                        tools:ignore="Autofill,TextFields" android:layout_marginBottom="24dp"
+                        app:layout_constraintStart_toEndOf="@+id/imageViewCapacity" android:layout_marginStart="24dp"
+                        app:layout_constraintHorizontal_bias="0.35"/>
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="0dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                card_view:cardCornerRadius="4dp"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent" android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/card_view2">
+
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_location"
+                        android:id="@+id/imageViewLocation"
+                        android:contentDescription="TODO"
+                        tools:ignore="ContentDescription"
+                        android:layout_marginStart="40dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/editTextLocation"
+                        app:layout_constraintBottom_toBottomOf="@+id/editTextLocation"/>
+
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="none"
+                        android:id="@+id/editTextLocation" android:layout_marginTop="24dp"
+                        android:layout_marginEnd="40dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageViewLocation"
+                        android:layout_marginStart="24dp" app:layout_constraintHorizontal_bias="0.35"
+                        android:hint="Add location"
+                        tools:ignore="Autofill,TextFields" android:layout_marginBottom="24dp"/>
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+                android:text="Continue"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonContinue" android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/card_view3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.060000002"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                android:layout_marginBottom="24dp"/>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

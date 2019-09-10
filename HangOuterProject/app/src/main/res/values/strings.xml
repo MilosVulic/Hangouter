@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HangOuterProject</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <!-- TODO: String resources for theme changing -->
+    <string name="settings_category_theme">Theme</string>
+    <string name="settings_title_theme">Change theme</string>
+    <string name="settings_title_theme_off">Switch to dark theme</string>
+    <string name="settings_title_theme_on">Switch to light theme</string>
+
+    <!-- TODO: String resources for language settings -->
+    <string name="settings_category_language">Language</string>
+    <string name="settings_title_language">Default language</string>
+    <string name="settings_summary_language">Select application language</string>
+    <string name="enLanguage">English</string>
+    <string name="srLanguage">Serbian</string>
+    <string name="geLanguage">German</string>
+    <string name="ruLanguage">Russian</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="creditcard">CreditCard</string>
+    <string name="email">Email</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="twitter_consumer_key" translatable="false">lOuU0zhBebUP45k5bqRUXPEWv</string>
+    <string name="twitter_consumer_secret" translatable="false">aFnCFuLXQYaXfdyo7jFSYBKDG4oHEVDOkhPx6RV2BTjPP7ZEtR
+    </string>
+
+    <string name="facebook_application_id">523743201713697</string>
+    <string name="fb_login_protocol_scheme">fb523743201713697</string>
+</resources>

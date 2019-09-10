@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_item_one"
+              android:icon="@drawable/ic_home"
+              android:title="Home"/>
+        <item android:id="@+id/nav_item_two"
+              android:icon="@drawable/ic_adding_event"
+              android:title="Add event"/>
+        <item android:id="@+id/nav_item_my_reservations"
+              android:icon="@drawable/ic_reservations"
+              android:title="Reservations"/>
+    </group>
+
+
+    <item android:title="Application">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_item_account"
+                      android:icon="@drawable/ic_account"
+                      android:title="Account"/>
+                <item android:id="@+id/nav_item_seven"
+                      android:icon="@drawable/ic_settings"
+                      android:title="Settings"/>
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Support">
+        <menu>
+            <item android:id="@+id/nav_item_four"
+                  android:icon="@drawable/ic_about"
+                  android:title="About"/>
+            <item android:id="@+id/nav_item_five"
+                  android:icon="@drawable/ic_send"
+                  android:title="Send us feedback"/>
+        </menu>
+    </item>
+
+</menu>

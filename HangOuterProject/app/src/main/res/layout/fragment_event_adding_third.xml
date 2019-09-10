@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginTop="-8dp">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:src="@drawable/add_event"
+            android:id="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="TODO"
+            android:cropToPadding="true"/>
+
+    <Button
+            android:text="Start date &amp; time"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonStartDate"
+            app:layout_constraintEnd_toStartOf="@+id/textViewStartDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginEnd="16dp"
+            android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginStart="20dp"/>
+
+    <Button
+            android:text="End date &amp; time"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonEndDate"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/buttonStartDate"
+            app:layout_constraintEnd_toStartOf="@+id/textViewEndDate"
+            app:layout_constraintStart_toStartOf="@+id/buttonStartDate"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginEnd="16dp"/>
+
+    <TextView
+            android:hint="2019/07/07 20:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewStartDate" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toTopOf="@+id/buttonStartDate"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonStartDate"
+    />
+
+    <TextView
+            android:hint="2019/07/07 02:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewEndDate"
+            app:layout_constraintTop_toTopOf="@+id/buttonEndDate"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonEndDate" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+    />
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_planet"
+            android:id="@+id/imageViewTimeZone"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription"
+            android:layout_marginStart="50dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@+id/spinnerTimeZones"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerTimeZones"/>
+
+    <EditText
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/editTextPrice"
+            android:hint="Ticket price"
+            tools:ignore="Autofill,TextFields"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/buttonEndDate"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPrice" android:layout_marginStart="8dp"/>
+
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_price"
+            android:id="@+id/imageViewPrice"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription"
+            app:layout_constraintTop_toTopOf="@+id/editTextPrice"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextPrice" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="50dp"/>
+
+    <Spinner
+            android:id="@+id/spinnerTimeZones"
+            style="@android:style/Widget.Material.Spinner.Underlined"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="50dp" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPrice"
+            app:layout_constraintStart_toEndOf="@+id/imageViewTimeZone" android:layout_marginStart="8dp"/>
+
+    <Button
+            android:text="Add event"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonAddEvent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerTimeZones"/>
+
+</android.support.constraint.ConstraintLayout>

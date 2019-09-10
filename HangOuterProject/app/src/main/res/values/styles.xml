@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dark Theme -->
+    <style name="BlackTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/statusBarDarkTheme</item>
+        <item name="colorPrimary">@color/toolbarDarkTheme</item>
+        <item name="colorAccent">@color/colorAccentDarkTheme</item>
+        <item name="android:windowBackground">@color/backgroundColorDarkTheme</item>
+        <item name="android:itemBackground">@color/backgroundColorDarkTheme</item>
+        <item name="android:textColor">@color/backgroundOrangeTheme</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_dark_theme</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <!-- Orange Theme Default One -->
+    <style name="OrangeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/statusBarOrangeTheme</item>
+        <item name="colorPrimary">@color/colorAccentOrangeTheme</item>
+        <item name="colorAccent">@color/colorAccentOrangeTheme</item>
+        <item name="android:itemBackground">@color/toolbarItemBackgroundLight</item>
+        <item name="android:itemTextAppearance">@style/menu_item_color</item>
+        <item name="android:textColor">@color/statusBarDarkTheme</item>
+        <item name="android:textColorSecondary">@color/statusBarDarkTheme</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_light_theme</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+    </style>
+
+    <!-- Animation during the theme change -->
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <!-- Menu Item Text Color Orange Theme -->
+    <style name="menu_item_color">
+        <item name="android:textColor">@color/backgroundOrangeTheme</item>
+    </style>
+
+    <!-- Setting color of hamburger menu to white on orange theme -->
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/backgroundOrangeTheme</item>
+    </style>
+
+    <!-- Button style for card view buttons -->
+    <style name="cardViewButtonStyle" parent="Theme.AppCompat">
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- ProgressDialog orange theme -->
+    <style name="ProgressDialogLightTheme" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogSpotColor">@android:color/holo_orange_dark</item>
+        <item name="DialogSpotCount">4</item>
+    </style>
+
+    <!-- ProgressDialog dark theme -->
+    <style name="ProgressDialogDarkTheme" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogSpotColor">@color/colorAccentDarkTheme</item>
+        <item name="DialogSpotCount">4</item>
+    </style>
+
+</resources>

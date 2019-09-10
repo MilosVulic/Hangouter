@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Hover over button style for light theme -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorAccentOrangeTheme">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/backgroundOrangeTheme" />
+        </shape>
+    </item>
+</ripple>

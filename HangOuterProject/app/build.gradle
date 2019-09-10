@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.metropolitan.hangouterproject"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // Navigation drawer
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+
+    // Dagger 2 dependencies
+    implementation 'com.google.dagger:dagger:2.15'
+    kapt 'com.google.dagger:dagger-compiler:2.15'
+    implementation 'com.google.dagger:dagger-android:2.15'
+    kapt 'com.google.dagger:dagger-android-processor:2.15'
+
+    // Preferences
+    implementation 'com.android.support:preference-v7:28.0.0'
+
+    // CircleImageView
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    // Date and Time pickers
+    implementation 'com.github.florent37:singledateandtimepicker:2.1.4'
+
+    // Handling permissions
+    implementation 'com.github.quickpermissions:quickpermissions-kotlin:0.4.0'
+
+    // Firebase dependencies
+    implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation 'com.google.firebase:firebase-database:17.0.0'
+    implementation 'com.google.firebase:firebase-storage:17.0.0'
+    implementation 'com.firebaseui:firebase-ui-database:5.0.0'
+    implementation 'com.firebaseui:firebase-ui-storage:5.0.0'
+    implementation 'com.google.firebase:firebase-auth:17.0.0'
+    implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
+    implementation 'com.google.android.gms:play-services-auth:16.0.0'
+    implementation 'com.facebook.android:facebook-android-sdk:5.0.0'
+    implementation 'com.twitter.sdk.android:twitter-core:3.1.1'
+
+
+    // RecyclerView and CardView dependencies
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    // Glide library for image loading (similar to Picasso)
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    kapt 'com.github.bumptech.glide:compiler:4.9.0'
+
+    // Dialog for uploading
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+
+    // Async library for kotlin
+    implementation "org.jetbrains.anko:anko-commons:0.10.5"
+}

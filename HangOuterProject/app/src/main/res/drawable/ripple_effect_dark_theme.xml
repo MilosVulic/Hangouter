@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Hover over button style for dark theme -->
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorAccentDarkTheme">
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/cardViewBackgroundDarkColor" />
+        </shape>
+    </item>
+</ripple>
